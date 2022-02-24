@@ -13,23 +13,44 @@
 // Ciclo da 1 fino a 100
 for(var i = 1; i <= 100; i++){
 
+    // creo un box
+    let newBox = document.createElement('div');
+    // Gli aggiungo la classe che definisce lo stile
+    newBox.classList.add('box');
+
+    //lo vado ad accodare agli altri
+    document.getElementById('box-container').append(newBox);
+
     // Se il numero è multiplo di 3 e di 5, stampo 'FizzBuzz'
     if ((i%3 == 0) && (i%5 == 0)){
         console.log(i + " FizzBuzz");
+        newBox.innerHTML = "FizzBuzz";
+
+        // Aggiungo una nuova classe
+        newBox.classList.add('fizz-buzz');
     } 
 
     // Altrimenti se il numero è multiplo di 3, stampo 'Fizz'
     else if (i%3 == 0){ 
         console.log(i + " Fizz");
+        newBox.innerHTML = "Fizz";
+        
+        // Aggiungo una nuova classe
+        newBox.classList.add('fizz');
     } 
 
     // Altrimenti se il numero è multiplo di 5, stampo 'Buzz'
     else if (i%5 == 0){
         console.log(i + " Buzz");
+        newBox.innerHTML = "Buzz";
+        
+        // Aggiungo una nuova classe
+        newBox.classList.add('buzz');
     }
 
     // In tutti gli altri casi stampo solo il numero
     else{
         console.log(i);
+        newBox.innerHTML = `${i}`;
     }
 }

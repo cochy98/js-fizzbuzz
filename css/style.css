@@ -1,0 +1,22 @@
+.box{
+    width: 200px; 
+    height: 200px;
+    line-height: 200px;
+    margin: .5rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(37, 139, 255);
+}
+
+.fizz-buzz{
+    background-color: chocolate;
+}
+
+.fizz{
+    background-color: brown;
+}
+
+.buzz{
+    background-color: blueviolet;
+}
